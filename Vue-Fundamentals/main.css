@@ -1,9 +1,9 @@
 body {
-  font-size: 22px;
+  font-size: 1.2rem;
 }
 
 input[type="text"] {
-  margin: 10px 0;
+  margin: .8rem 0;
   display: block;
   padding:.5rem 0.5rem;
 }

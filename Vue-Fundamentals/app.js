@@ -8,7 +8,7 @@ const vm = Vue.createApp({
     },
     methods:{
         getFullName(){
-            return `${this.firstName} ${this.lastName}`
+            return `${this.firstName} ${this.lastName.toUpperCase()}`
         }
     }
     
