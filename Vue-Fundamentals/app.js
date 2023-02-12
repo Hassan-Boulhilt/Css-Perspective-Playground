@@ -6,6 +6,11 @@ const vm = Vue.createApp({
            
         }
     },
+    methods:{
+        getFullName(){
+            return `${this.firstName} ${this.lastName}`
+        }
+    }
     
 
 }).mount('#app')
