@@ -8,6 +8,7 @@ const vm = Vue.createApp({
             url_b:"https://www.bing.com",
             raw_url:'<a href="https://www.youtube.com" target="_blanc">You tube</a>',
             age:20,
+            number:0,
         }
     },
     methods:{

@@ -3,11 +3,12 @@ body {
   padding:2rem;
 }
 
-input[type="text"] {
+input[type="text"],[type="number"] {
   margin: .8rem 0;
   display: block;
   padding:.5rem 0.5rem;
 }
+
 [v-cloak] {
   display: none;
 }
