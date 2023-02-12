@@ -17,7 +17,7 @@
       <hr/>
       <!-- First Name and Last Name -->
       <label for="">First Name:</label>
-      <input type="text" :value="firstName" @input="updateFirstName('First Name triggred !!', $event)">
+      <input type="text" :value="firstName" @input.prevent="updateFirstName('First Name triggred !!', $event)">
       <label for="">Last Name:</label>
       <input type="text" v-model="lastName">
       <!-- Incremente and Decremente Age value -->
