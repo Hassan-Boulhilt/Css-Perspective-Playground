@@ -3,6 +3,8 @@ let vm = Vue.createApp({
         return{
             isPurple:false,
             selectedColor:'',
+            size:150,
+            rotate:`rotate(30deg)`,
         }
     },
     computed:{
@@ -11,6 +13,20 @@ let vm = Vue.createApp({
                 purple:this.isPurple
             }
         },
+        circle_size(){
+            return{
+                width:this.size+`px`,
+                height:this.size+`px`,
+                lineHeight:this.size+`px`,
+                
+
+            }
+        },
+        circle_rotate(){
+            return{
+                transform:this.rotate
+            }
+        }
         
     }
 }).mount('#app')
