@@ -1,7 +1,7 @@
 let vm = Vue.createApp({
     data(){
         return{
-            mode:true,
+            mode:1,
         }
     }
 }).mount('#app');

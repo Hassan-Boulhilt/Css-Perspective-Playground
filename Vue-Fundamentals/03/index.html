@@ -8,12 +8,21 @@
 
 <body>
   <div id="app">
+    <!-- v-if directive is conditional rendering that remove element from the DOM if condition is met or unmet -->
+    <!-- Work with template to let the structure of css properties consistent -->
+    <!-- Cheap on load because it's lazy -->
+    <!-- Expensive on toggle -->
     <p v-if="mode == 1"> v-if </p>
     <template v-else-if="mode == 0">
     <h3>Bonus Content</h3>
     <p>v-else-if</p>
     </template>
     <p v-else>v-else</p>
+    <!-- v-show unlike v-if it doesn't remove element from the DOM intead it hide or assign none to css display property -->
+    <!-- Not working with template tag -->
+    <!-- Expensive onload -->
+    <!-- Cheap on toggle -->
+    <i v-show="mode == 1">v-show</i>
 
     <select v-model="mode"name="" id="">
       <option value="1">v-if</option>
