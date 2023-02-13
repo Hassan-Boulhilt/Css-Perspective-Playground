@@ -13,7 +13,7 @@
       <p><a v-bind:href="url_g">Google</a></p>
       <p><a :href="url_b">Bing</a></p>
       <p><a v-html:href="raw_url"></a></p>
-      <p>Age:{{age}}</p>
+      
       <hr/>
       <!-- First Name and Last Name -->
       <label for="">First Name:</label>
@@ -26,6 +26,7 @@
       <!-- Incremente and Decremente Age value -->
       <label for="">Number:</label>
       <input type="number" v-model.number="number">
+      <p>Age:{{age}}</p>
       <button type="button" v-on:click="incrementeAge">Incremente</button>
       <button type="button"@click="age--">Decremente</button>
        
