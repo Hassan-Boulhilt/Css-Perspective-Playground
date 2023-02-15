@@ -14,6 +14,13 @@ let vm = Vue.createApp({
             this.rotateY_value=0;
             this.rotateZ_value=0;
 
+        },
+        async copy(){
+            let text = `transform:${this.box.transform};`
+            await navigator.clipboard.writeText(text)
+
+            alert("Css rules copied")
+
         }
 
     },
@@ -23,7 +30,10 @@ let vm = Vue.createApp({
             
             
                 return{
-                    transform:`perspective(${this.perspective_value}px) rotateX(${this.rotateX_value}deg) rotateY(${this.rotateY_value}deg) rotateZ(${this.rotateZ_value}deg)`,
+                    transform:`perspective(${this.perspective_value}px)
+                               rotateX(${this.rotateX_value}deg) 
+                               rotateY(${this.rotateY_value}deg) 
+                               rotateZ(${this.rotateZ_value}deg)`,
                     
                 }
                 
